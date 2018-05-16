@@ -73,6 +73,7 @@
 6.4 开关选择器
 
 6.5 按钮的上传等待显示
+
 ![截图1](https://github.com/treey-yao/picture/raw/master/videoDemo/11.png)
 ![截图1](https://github.com/treey-yao/picture/raw/master/videoDemo/9.png)
 ![截图1](https://github.com/treey-yao/picture/raw/master/videoDemo/10.png)
