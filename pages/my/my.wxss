@@ -1,0 +1,96 @@
+/**my.wxss**/
+
+
+/* 头像 */
+
+.head-warp {
+    display: blockl;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.head-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #FC4C91;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    z-index: 10
+}
+
+.head-img-warp {
+    display: block;
+    position: absolute;
+    top: 22px;
+    width: 100%;
+    z-index: 11;
+    text-align: center;
+}
+
+.head-img {
+    display: block;
+    margin: 0px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.user-name {
+    font-size: 14px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.ui-cells {
+    margin-bottom: 10px;
+    line-height: 1.41176471;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ui-cell {
+    position: relative;
+    padding: 10px 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: inherit;
+    background-color: #fff;
+    margin-top: 1px;
+}
+
+.ui-cell-1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.act-icon {
+    font-family: actfont;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 100% auto;
+    background-position: center;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 4px;
+    width: 16px;
+    height: 16px;
+}

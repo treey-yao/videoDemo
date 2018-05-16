@@ -1,0 +1,35 @@
+<!-- uploadview.wxml -->
+<view class="ui-content">
+  <view class="row-warp">
+    <picker bindchange="bindCasPickerChange" value="{{casIndex}}" range="{{casArray}}">
+      <view>
+        <text>发布到 {{casArray[casIndex]}}</text>
+      </view>
+    </picker>
+  </view>
+  <view class="row-warp">
+    <input placeholder="标题" maxlength="30" bindinput="titleInput" />
+  </view>
+  <view class="row-warp">
+    <input placeholder="描述一下你的视频，30个字之内" maxlength="30" bindinput="describeInput" />
+  </view>
+  <view class="row-warp">
+    <view wx:if="{{condition}}" class="upload-warp" bindtap="uploadfile">
+      <image class="upload-plus" mode="{{mode}}" src="{{icosrc}}"></image>
+      <text class="upload-text">{{uploadText }}</text>
+    </view>
+    <view wx:else>
+      <video id="video" class="video" src="{{videoSrc}}"></video>
+    </view>
+  </view>
+  <view class=" row-warp text-c" wx:if="{{againBtn}}">
+    <text class="again-video" bindtap="againUploadBtn"  >重新选择</text>
+  </view>
+  <view class="row-warp text-r">
+    <switch checked bindchange="switchChange" />
+    <text>匿名</text>
+  </view>
+  <view class="row-warp ">
+    <button class="upload-btn" bindtap="uploadBtn" loading="{{btnloading}}">{{ btntext}}</button>
+  </view>
+</view>

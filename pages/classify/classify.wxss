@@ -1,0 +1,17 @@
+/**classify.wxss**/
+
+.cla-warp {
+    display: block;
+    margin: 10px 10px 20px;
+    background: #fff;
+    position: relative;
+    height: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cla-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}

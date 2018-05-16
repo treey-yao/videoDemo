@@ -1,0 +1,57 @@
+<!-- index.wxml -->
+<view class="index-content">
+  <!-- banner -->
+  <view class="banner-warp">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- banner  end -->
+  <view class="card-title ">热门</view>
+  <scroll-view scroll-x="true" class="hot-warp">
+    <view class="hot-video-item " bindtap="showvideo">
+      <image src="{{hotVideoSrc}}" class="hot-image"></image>
+    </view>
+    <view class="hot-video-item " bindtap="showvideo">
+      <image src="{{hotVideoSrc}}" class="hot-image"></image>
+    </view>
+    <view class="hot-video-item " bindtap="showvideo">
+      <image src="{{hotVideoSrc}}" class="hot-image"></image>
+    </view>
+    <view class="hot-video-item " bindtap="showvideo">
+      <image src="{{hotVideoSrc}}" class="hot-image"></image>
+    </view>
+  </scroll-view>
+  <view class="card-title ">推荐</view>
+  <view class="recommend-warp">
+
+    <view class="re-video-item " wx:for="{{reArray}}">
+      <image src="{{item.reVideoSrc}}" class="re-image"></image>
+      <text class="video-title">{{item.reTitleText }}</text>
+      <view class="video-info-warp">
+        <view class="user-info">
+          <image src="{{item.userImgSrc}}" class="user-image"></image>
+          <text class="user-name">{{item.userName }}</text>
+        </view>
+        <view class="heart-warp" bindtap="heartHove" data-id="{{index}}" data-zan="{{item.zan}}">
+          <image src="{{item.heartImgSrc}}" class="heart-image"></image>
+          <text class="heart-number">{{item.heartNumber }}</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <!-- 加载更多 -->
+  <view class="recommend-box-more">
+    <view wx:if="{{recommendhidden}}">
+      <image src="../image/loading.gif" mode="aspectFit"></image>
+    </view>
+    <view wx:else>
+      <text>没有更多了</text>
+    </view>
+  </view>
+</view>

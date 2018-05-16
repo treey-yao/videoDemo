@@ -1,0 +1,35 @@
+/**app.wxss**/
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+}
+
+.ui-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background: #F8F8F8;
+    -webkit-overflow-scrolling: touch;
+    font-size: 16px;
+    color: #666;
+}
+
+.index-content {
+    background: #F8F8F8;
+    -webkit-overflow-scrolling: touch;
+    font-size: 16px;
+    color: #666;
+}
+
+.icon-go {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAXklEQVQ4jWNgQAJdXV0GXV1d6xnIBf39/QJdXV3nu7q69o8agmHI+WFgSGdnZ0FXV9f7zs7OALprbiBLM9Tf8ynVfL+9vV2BHM3ru7q6ztNXMwMDPDuf7+/vFyBWDwBCaGyEDl82LQAAAABJRU5ErkJggg==")
+}

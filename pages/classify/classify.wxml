@@ -1,0 +1,6 @@
+<!-- classify.wxml -->
+<view class="ui-content" >
+  <view class="cla-warp"  wx:for="{{ claArray}}"  style="background: #{{item.claColor}};" id="{{ item.classId}}"  bindtap="viewTap">
+    <text class="cla-text">{{ item.claText}}</text>
+  </view>
+</view>

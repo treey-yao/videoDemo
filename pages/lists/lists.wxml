@@ -1,0 +1,21 @@
+<!-- lists.wxml -->
+<view class="index-content">
+  <view class="card-title ">视频</view>
+  <view class="recommend-warp">
+    <view class="re-video-item " wx:for="{{lsitArray}}">
+      <image src="{{item.lsitVideoSrc}}" class="re-image"></image>
+      <text class="video-title">{{item.lsitTitleText }}</text>
+      <view class="video-info-warp">
+        <view class="user-info">
+          <image src="{{item.userImgSrc}}" class="user-image"></image>
+          <text class="user-name">{{item.userName }}</text>
+        </view>
+        <view class="heart-warp">
+          <image src="{{item.heartImgSrc}}" class="heart-image"></image>
+          <text class="heart-number">{{item.heartNumber }}</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

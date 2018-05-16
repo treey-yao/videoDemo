@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/classify/classify",
+        "pages/my/my",
+        "pages/myvideo/myvideo",
+        "pages/uploadview/uploadview",
+        "pages/lists/lists",
+        "pages/showvideo/showvideo",
+        "pages/uploadimg/uploadimg"
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "BaiShe",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#99999",
+        "selectedColor": "#FC4C91",
+        "backgroundColor": "#fff",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "pages/image/home.png",
+            "selectedIconPath": "pages/image/home_hove.png"
+
+        }, {
+            "pagePath": "pages/classify/classify",
+            "text": "分类",
+            "iconPath": "pages/image/classify.png",
+            "selectedIconPath": "pages/image/classify_hove.png"
+
+        }, {
+            "pagePath": "pages/my/my",
+            "text": "我的",
+            "iconPath": "pages/image/my.png",
+            "selectedIconPath": "pages/image/my_hove.png"
+
+        }]
+    }
+}

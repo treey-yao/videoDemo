@@ -1,0 +1,30 @@
+<!-- my.wxml -->
+<view class="ui-content">
+  <!-- 头像 -->
+  <view class="head-warp">
+    <view class="head-bg"></view>
+    <view class="head-img-warp">
+      <image class="head-img" mode="{{mode}}" src="{{src}}"></image>
+      <text class="user-name">梦魇</text>
+    </view>
+  </view>
+  <!-- 用户功能 -->
+  <view class="ui-cells">
+    <view class="ui-cell" bindtap="toMyvideo">
+      <view class="ui-cell-1" > 我的视频</view>
+      <i class="act-icon icon-go"> </i>
+    </view>
+     <view class="ui-cell" bindtap="toMyImg">
+      <view class="ui-cell-1" > 我的图片</view>
+      <i class="act-icon icon-go"> </i>
+    </view>
+    <view class="ui-cell" bindtap="viewTap">
+      <view class="ui-cell-1" > 视频上传</view>
+      <i class="act-icon icon-go"> </i>
+    </view>
+    <view class="ui-cell" bindtap="imgTap">
+      <view class="ui-cell-1" > 图片上传</view>
+      <i class="act-icon icon-go"> </i>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+<!-- uploadimg.wxml -->
+<view class="ui-content">
+  <view class="row-warp">
+    <picker bindchange="bindCasPickerChange" value="{{casIndex}}" range="{{casArray}}">
+      <view>
+        <text>发布到 {{casArray[casIndex]}}</text>
+      </view>
+    </picker>
+  </view>
+  <view class="row-warp">
+    <input placeholder="标题" maxlength="30" bindinput="titleInput" />
+  </view>
+  <view class="row-warp">
+    <input placeholder="描述一下你的图片，30个字之内" maxlength="30" bindinput="describeInput" />
+  </view>
+  <view class="row-warp">
+    <view wx:if="{{condition}}" class="upload-warp" bindtap="uploadfile">
+      <image class="upload-plus" mode="{{mode}}" src="{{icosrc}}"></image>
+      <text class="upload-text">{{uploadText }}</text>
+    </view>
+    <view wx:else class="img-list-warp">
+      <view wx:for="{{imgIist}}" class="img-list-item">
+        <image src="{{item.imgsrc }}" class="img-item"></image>
+        <image src="../image/close.png" class="close" bindtap="close" data-index="{{ index}}"></image>
+      </view>
+      <view class="img-list-item" bindtap="uploadfile">
+        <image src="../image/plus.png" class="img-item"></image>
+      </view>
+    </view>
+  </view>
+  <view class="row-warp text-r">
+    <switch checked bindchange="switchChange" />
+    <text>匿名</text>
+  </view>
+  <view class="row-warp ">
+    <button class="upload-btn" bindtap="uploadBtn" loading="{{btnloading}}">{{ btntext}}</button>
+  </view>
+</view>

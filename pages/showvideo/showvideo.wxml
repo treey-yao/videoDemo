@@ -1,0 +1,19 @@
+<!-- classify.wxml -->
+<view class="ui-content">
+    <view class="video-warpper">
+        <video wx:if="{{showVideo}}" id="video" class="video" src="{{videoSrc}}"></video>
+    </view>
+    <text class="video-title">{{ titleText }}</text>
+    <view class="video-info-warp">
+        <view class="user-info">
+            <image src="{{userImgSrc}}" class="user-image"></image>
+            <text class="user-name">{{userName }}</text>
+        </view>
+        <view class="heart-warp">
+            <image src="{{heartImgSrc}}" class="heart-image"></image>
+            <text class="heart-number">{{heartNumber }}</text>
+        </view>
+    </view>
+    <!-- 描述 -->
+    <view class="describe-warp">{{describeText }}</view>
+</view>
